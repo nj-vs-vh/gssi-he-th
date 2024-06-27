@@ -1,0 +1,1 @@
+Lecture notes and exercises: [repo](https://github.com/carmeloevoli/heath-2324)

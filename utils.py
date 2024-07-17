@@ -44,3 +44,6 @@ def bohm_diffusion_coeff(
         * np.sqrt(E**2 - (const.m_e * const.c**2) ** 2)
         / (const.e.gauss * B)
     ).to(u.pc**2 / u.Gyr)
+
+
+T_CMB = 2.725 * u.K

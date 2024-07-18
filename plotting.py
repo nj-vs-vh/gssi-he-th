@@ -12,4 +12,8 @@ def label_axes(ax: plt.Axes, xlabel: str | None = None, ylabel: str | None = Non
         if label is None:
             continue
         units_label = getter()
-        setter(f"$ {label} $ [{units_label}]")
+        if units_label:
+            units = f" [{units_label}]"
+        else:
+            units = ""
+        setter(f"$ {label} $" + units)

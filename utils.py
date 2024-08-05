@@ -47,3 +47,10 @@ def bohm_diffusion_coeff(
 
 
 T_CMB = 2.725 * u.K
+
+
+def clamp_mod(
+    v: np.ndarray, min: float, period: float
+) -> tuple[np.ndarray, np.ndarray]:
+    v_shifted = v - min
+    return (min + (v_shifted) % period, v_shifted // period)

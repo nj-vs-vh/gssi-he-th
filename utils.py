@@ -33,6 +33,7 @@ gauss_cgs = u.def_unit(
     format={"latex": r"G"},
     prefixes=True,
 )
+GeV_over_c = u.def_unit("GeV/c", u.GeV / const.c, format={"latex": r"GeV/c"})
 
 
 def bohm_diffusion_coeff(
